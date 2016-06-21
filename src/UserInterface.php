@@ -9,7 +9,7 @@
 namespace MidoriKocak;
 
 
-interface PersonInterface
+interface UserInterface
 {
     public function getId():string;
     public function getEmail():string;

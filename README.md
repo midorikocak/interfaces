@@ -33,6 +33,7 @@ phpunit
 
 * 0.0.1
     * Work in progress
+    * added new interfaces
 
 ## Meta
 
