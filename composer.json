@@ -15,7 +15,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "MidoriKocak\\": "src/"
+            "MidoriKocak\\Common\\": "src/",
+            "MidoriKocak\\Interfaces\\": "lib/"
         },
         "psr-0": {
             "MidoriKocakTest\\": "tests/"

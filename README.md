@@ -34,6 +34,8 @@ phpunit
 * 0.0.1
     * Work in progress
     * packagist auto update
+    * better interface organization
+    * tests are not finished yet
 
 ## Meta
 

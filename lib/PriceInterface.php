@@ -6,7 +6,7 @@
  * Time: 04:44
  */
 
-namespace MidoriKocak;
+namespace MidoriKocak\Interfaces;
 
 
 /**

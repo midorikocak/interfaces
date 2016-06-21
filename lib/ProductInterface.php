@@ -1,13 +1,13 @@
 <?php
 
-namespace MidoriKocak;
+namespace MidoriKocak\Interfaces;
 
 
 /**
  * Interface ProductInterface
  * @package MidoriKocak
  */
-interface ProductInterface
+interface ProductInterface extends ItemInterface
 {
     /**
      * We can have currency, amount and tax percentage.
@@ -18,5 +18,4 @@ interface ProductInterface
 
     public function getContent():ContentInterface;
     public function getSKU():string;
-    public function getId():string;
 }
