@@ -22,11 +22,21 @@ class Item implements ItemInterface
         $this->setData($data);
     }
 
-    protected function setData(array $data):bool{
+    protected function setData(array $data):bool
+    {
         $this->id = $data['id'];
         $this->created = $data['created'];
         $this->updated = $data['updated'];
         return true;
+    }
+
+    protected function getData():array
+    {
+        $data = [];
+        $data['id'] = $this->getId();
+        $data['updated'] = $this->getUpdated();
+        $data['created'] = $this->getCreated();
+        return $data;
     }
 
     public function getId():string
@@ -46,10 +56,6 @@ class Item implements ItemInterface
 
     public function __toString():string
     {
-        $arrayToPrint = [];
-        $arrayToPrint['id'] = $this->getId();
-        $arrayToPrint['updated'] = $this->getUpdated();
-        $arrayToPrint['created'] = $this->getCreated();
-        return json_encode($arrayToPrint, true);
+        return json_encode($this->getData(), true);
     }
 }

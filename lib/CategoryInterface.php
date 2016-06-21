@@ -11,6 +11,7 @@ namespace MidoriKocak\Interfaces;
 
 interface CategoryInterface extends ItemInterface
 {
+    public function getTitle():string;
     public function getDescription():string;
     public function addItem(ItemInterface $item):bool;
     public function removeItem(ItemInterface $item):bool;

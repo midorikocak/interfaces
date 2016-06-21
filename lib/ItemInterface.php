@@ -35,11 +35,4 @@ interface ItemInterface
      * @return int
      */
     public function getUpdated():int;
-
-    /**
-     * After this, object should die. And never used again.
-     *
-     * @return string
-     */
-    public function __toString():string;
 }

@@ -12,6 +12,8 @@ namespace MidoriKocak\Interfaces;
 interface UserInterface extends ItemInterface
 {
     public function getEmail():string;
-    public function login():bool;
+    public function isLogged():bool;
+    public function changePassword(string $oldPassword, string $newPassword1, string $newPassword2):bool;
+    public function login(string $password):bool;
     public function logout():bool;
 }

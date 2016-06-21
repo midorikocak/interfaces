@@ -30,6 +30,13 @@ class Content extends Item implements ContentInterface
         return true;
     }
 
+    protected function getData():array{
+        $data = parent::getData();
+        $data['title'] = $this->title;
+        $data['content'] = $this->content;
+        return $data;
+    }
+
     public function getSummary(int $chars):string
     {
         return substr($this->getContent(), 0, $chars);
@@ -38,17 +45,6 @@ class Content extends Item implements ContentInterface
     public function getAuthor():UserInterface
     {
         return $this->author;
-    }
-
-    public function __toString():string
-    {
-        $arrayToPrint = [];
-        $arrayToPrint['id'] = $this->getId();
-        $arrayToPrint['title'] = $this->getTitle();
-        $arrayToPrint['content'] = $this->getContent();
-        $arrayToPrint['updated'] = $this->getUpdated();
-        $arrayToPrint['created'] = $this->getCreated();
-        return json_encode($arrayToPrint, true);
     }
 
     public function getTitle():string

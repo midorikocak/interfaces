@@ -14,4 +14,5 @@ interface AppInterface extends ItemInterface
     public function install();
     public function open();
     public function close();
+    public function register(string $email, string $password);
 }
