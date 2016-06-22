@@ -4,10 +4,8 @@ use \MidoriKocak\Common;
 
 class ItemTest extends \PHPUnit_Framework_TestCase
 {
-
     public function setup()
     {
-
     }
 
     public function testCreateItem()
@@ -17,7 +15,8 @@ class ItemTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($item != null);
     }
 
-    public function testPrint(){
+    public function testPrint()
+    {
         $time = time();
         $data = ['id' => 1, 'created' => $time, 'updated' => $time];
         $item = new Common\Item($data);

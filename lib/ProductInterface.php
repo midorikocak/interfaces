@@ -3,8 +3,7 @@
 namespace MidoriKocak\Interfaces;
 
 /**
- * Interface ProductInterface
- * @package MidoriKocak
+ * Interface ProductInterface.
  */
 interface ProductInterface extends ItemInterface
 {

@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: mtkocak
  * Date: 21/06/16
- * Time: 05:55
+ * Time: 05:55.
  */
 
 namespace MidoriKocak\Interfaces;
-
 
 interface ItemInterface
 {
