@@ -1,4 +1,4 @@
-# Interaces
+# Interfaces
 > Most common interfaces I use in apps. Mostly for teaching OOP.
 
 [![Build Status][travis-image]][travis-url]
