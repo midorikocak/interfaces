@@ -4,10 +4,8 @@ use \MidoriKocak\Common;
 
 class ContentTest extends \PHPUnit_Framework_TestCase
 {
-
     public function setup()
     {
-
     }
 
     public function testCreateItem()
@@ -17,7 +15,7 @@ class ContentTest extends \PHPUnit_Framework_TestCase
             'created' => time(),
             'updated' => time(),
             'content' => 'myContent',
-            'title' => 'myTitle'
+            'title' => 'myTitle',
         ];
         $content = new Common\Content($data);
         $this->assertTrue($content != null);

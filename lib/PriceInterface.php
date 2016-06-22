@@ -3,15 +3,13 @@
  * Created by PhpStorm.
  * User: mtkocak
  * Date: 21/06/16
- * Time: 04:44
+ * Time: 04:44.
  */
 
 namespace MidoriKocak\Interfaces;
 
-
 /**
- * Interface PriceInterface
- * @package MidoriKocak
+ * Interface PriceInterface.
  */
 interface PriceInterface
 {

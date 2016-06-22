@@ -4,7 +4,7 @@
  * Created by PhpStorm.
  * User: mtkocak
  * Date: 21/06/16
- * Time: 06:20
+ * Time: 06:20.
  */
 
 namespace MidoriKocak\Common;
@@ -23,17 +23,21 @@ class Content extends Item implements ContentInterface
         return $this->content;
     }
 
-    protected function setData(array $data):bool{
+    protected function setData(array $data):bool
+    {
         parent::setData($data);
         $this->title = $data['title'];
         $this->content = $data['content'];
+
         return true;
     }
 
-    protected function getData():array{
+    protected function getData():array
+    {
         $data = parent::getData();
         $data['title'] = $this->title;
         $data['content'] = $this->content;
+
         return $data;
     }
 
